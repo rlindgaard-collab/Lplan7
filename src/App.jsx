@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 const SUPABASE_URL = "https://https://fjwpfesqfwtozaciphnc.functions.supabase.co";
