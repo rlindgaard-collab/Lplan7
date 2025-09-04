@@ -169,35 +169,3 @@ export default function App() {
     </div>
   );
 }
-        <input
-          type="text"
-          value={profile}
-          onChange={(e) => setProfile(e.target.value)}
-          placeholder="Indtast profil/kompetencemål"
-          style={{ width: "400px" }}
-        />
-      </div>
-
-      <div style={{ marginTop: "1rem" }}>
-        <button onClick={handleSummarize} style={{ marginRight: "1rem" }}>
-          Opsummer
-        </button>
-        <button onClick={handleSuggest}>Lav forslag</button>
-      </div>
-
-      {summary && (
-        <div style={{ marginTop: "2rem" }}>
-          <h2>Opsummering:</h2>
-          <p>{summary}</p>
-        </div>
-      )}
-
-      {suggestion && (
-        <div style={{ marginTop: "2rem" }}>
-          <h2>Forslag:</h2>
-          <p>{suggestion}</p>
-        </div>
-      )}
-    </div>
-  );
-}
