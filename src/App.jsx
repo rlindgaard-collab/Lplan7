@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import * as pdfjsLib from 'pdfjs-dist/webpack';
+import * as pdfjsLib from 'pdfjs-dist/build/pdf';
+
+// Configure PDF.js worker
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
 
 const SUPABASE_URL = "https://https://fjwpfesqfwtozaciphnc.functions.supabase.co";
 
